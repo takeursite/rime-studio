@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RIME — Ceramic Atelier</title>
+<meta name="description" content="Hand-thrown porcelain objects, workshops and commissions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- shared SVG defs -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="vaseShape" d="M132 34 C150 52 168 70 170 112 C172 150 168 190 138 250 C100 310 92 380 108 440 C120 485 142 520 148 548 L146 566 Q200 578 254 566 L252 548 C258 520 280 485 292 440 C308 380 300 310 262 250 C232 190 228 150 230 112 C232 70 250 52 268 34 Z"/>
+    <linearGradient id="gGlacier" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#6e8aa0"/><stop offset=".22" stop-color="#b6cbda"/><stop offset=".42" stop-color="#8fa9bd"/><stop offset=".75" stop-color="#6c889d"/><stop offset="1" stop-color="#4e6a80"/>
+    </linearGradient>
+    <linearGradient id="gGlacierSoft" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#9db4c4"/><stop offset=".25" stop-color="#d3e0ea"/><stop offset=".55" stop-color="#a9bfce"/><stop offset="1" stop-color="#7f98ab"/>
+    </linearGradient>
+    <linearGradient id="gPodium" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#d4d9e2"/><stop offset=".4" stop-color="#f4f6f9"/><stop offset="1" stop-color="#cfd5df"/>
+    </linearGradient>
+    <linearGradient id="gPodiumTop" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7f9fb"/><stop offset="1" stop-color="#dfe4ec"/>
+    </linearGradient>
+    <linearGradient id="gRing" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#5d6672"/><stop offset=".3" stop-color="#f4f6f8"/><stop offset=".55" stop-color="#8a929d"/><stop offset=".8" stop-color="#e9edf0"/><stop offset="1" stop-color="#6c7480"/>
+    </linearGradient>
+    <linearGradient id="gWhite" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#cfd5dd"/><stop offset=".3" stop-color="#fafbfc"/><stop offset=".65" stop-color="#e3e7ec"/><stop offset="1" stop-color="#b9c0ca"/>
+    </linearGradient>
+    <linearGradient id="gBowl" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#c3c9d2"/><stop offset=".35" stop-color="#f3f5f8"/><stop offset=".7" stop-color="#d9dee5"/><stop offset="1" stop-color="#aeb6c1"/>
+    </linearGradient>
+    <linearGradient id="gGraphite" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#0f1624"/><stop offset=".3" stop-color="#34435a"/><stop offset=".6" stop-color="#18223a"/><stop offset="1" stop-color="#0a101c"/>
+    </linearGradient>
+    <linearGradient id="gPlatinum" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#9aa3af"/><stop offset=".4" stop-color="#e7ebef"/><stop offset="1" stop-color="#8c95a1"/>
+    </linearGradient>
+    <radialGradient id="gHi" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff" stop-opacity=".75"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur6"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="blur14"><feGaussianBlur stdDeviation="14"/></filter>
+    <clipPath id="clipVase"><use href="#vaseShape"/></clipPath>
+  </defs>
+</svg>
+
+<!-- ================= HEADER ================= -->
+<header class="nav" id="nav">
+  <a class="logo" href="#top" aria-label="RIME Ceramic Atelier"><b>RIME</b><span>Ceramic Atelier</span></a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#collections">Collections</a>
+    <a href="#workshops">Workshops</a>
+    <a href="#studio">Studio</a>
+    <a href="#commissions">Commissions</a>
+  </nav>
+  <a class="btn btn-dark" href="#workshops">Book a class</a>
+</header>
+
+<main id="top">
+
+<!-- ================= 1. HERO ================= -->
+<section class="hero" id="hero">
+  <div class="hero-copy">
+    <p class="eyebrow in-load" style="--d:.1s"><i class="dot"></i>Collection 2026 · Porcelain &amp; cold glaze</p>
+    <h1 class="h-hero">
+      <span class="ln"><span style="--d:.15s">Form,</span></span>
+      <span class="ln"><span style="--d:.28s">held</span></span>
+      <span class="ln"><span style="--d:.41s"><em>in frost.</em></span></span>
+    </h1>
+    <p class="lead in-load" style="--d:.6s">Hand-thrown porcelain objects. Quiet silhouettes,<br>deep glazes, and light that stays inside.</p>
+    <div class="cta in-load" style="--d:.72s">
+      <a class="btn btn-dark btn-lg" href="#collections">View the collection <svg width="8" height="12" viewBox="0 0 8 12"><path d="M1.5 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></a>
+      <a class="btn btn-silver btn-lg" href="#workshops">Book a workshop</a>
+    </div>
+    <div class="stats in-load" style="--d:.85s">
+      <div><b><span data-count="1280" data-fmt="comma">1,280</span> °C</b><small>Firing temperature</small></div>
+      <i></i>
+      <div><b><span data-count="12">12</span> pieces</b><small>Max per edition</small></div>
+    </div>
+  </div>
+
+  <div class="hero-art" id="heroArt">
+        <div class="halo"></div>
+    <div class="scene" id="scene"><img src="img/hero.jpg" alt="Glacier vase with a platinum ring on a white podium" fetchpriority="high"></div>
+    <a class="scroll-cue in-load" style="--d:1.4s" href="#process" aria-label="Scroll down"><span>Scroll</span><i></i></a>
+    <aside class="glass-card in-load" style="--d:1s">
+      <small>Object No.07</small>
+      <h3>Glacier</h3>
+      <p>Porcelain, pearl glaze, platinum band · 42 cm</p>
+      <hr>
+      <div class="price">€ 490</div>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= 2. FROM CLAY TO OBJECT (scroll) ================= -->
+<section class="process" id="process" aria-label="From clay to object">
+  <div class="stage" id="stage">
+
+    <div class="art" id="art">
+      <canvas id="wheelCanvas" width="1920" height="1080"></canvas>
+      <div class="anns" id="anns"></div>
+    </div>
+
+    <div class="p-head">
+      <h2 class="h-sec">From clay <em>to object</em></h2>
+      <div class="day" aria-live="off">
+        <span class="day-l">Day</span>
+        <span class="reel reel-day" id="reelTens"><span class="reel-in"><i>0</i><i>1</i><i>2</i><i>3</i></span></span><span class="reel reel-day" id="reelOnes"><span class="reel-in"><i>0</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i></span></span>
+        <span class="day-t">/ 21</span>
+      </div>
+    </div>
+
+    <div class="p-left" id="pLeft">
+      <div class="p-num ax" id="pNum">01</div>
+      <h3 class="p-title ax" id="pTitle">Clay</h3>
+      <p class="p-desc ax" id="pDesc"></p>
+      <div class="specs" id="pSpecs"></div>
+      <blockquote class="p-quote ax" id="pQuote"></blockquote>
+      <cite class="p-by ax">— Vera Lane, Maker</cite>
+    </div>
+
+    <div class="p-bar">
+      <div class="bar-l">
+        <span>Scroll</span>
+        <span class="track"><i id="barFill"></i></span>
+        <span class="reel-step"><span class="reel reel-sm" id="reelStep"><span class="reel-in"><i>1</i><i>2</i><i>3</i><i>4</i></span></span> / 4</span>
+      </div>
+      <div class="bar-r" id="barR">
+        <span class="nx nx-a" id="nxA"></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= 3 + 4. COLLECTIONS / WORKSHOPS ================= -->
+<div class="sky">
+<section class="collections" id="collections">
+  <div class="sec-head">
+    <div>
+      <h2 class="h-sec" data-reveal>Collections</h2>
+      <p class="sub" data-reveal style="--d:.1s">Objects in single editions</p>
+    </div>
+    <a class="link-arrow" href="#collections" data-reveal style="--d:.15s">Shop all pieces <svg width="38" height="14" viewBox="0 0 38 14"><path d="M0 7h36M30 1l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+  </div>
+
+  <div class="cards">
+    <article class="card" data-reveal style="--d:0s">
+      <img class="art-obj" src="img/glacier.jpg" alt="Glacier vase" loading="lazy">
+      <small>Vase · Porcelain</small><h3>Glacier</h3><p>Ice pearl glaze · 42 cm</p>
+    </article>
+
+    <article class="card" data-reveal style="--d:.1s">
+      <img class="art-obj" src="img/quartz.jpg" alt="Quartz bowl" loading="lazy">
+      <small>Bowl · Bisque</small><h3>Quartz</h3><p>Matte porcelain · Ø 28 cm</p>
+    </article>
+
+    <article class="card" data-reveal style="--d:.2s">
+      <img class="art-obj" src="img/stillwater.jpg" alt="Stillwater vessel" loading="lazy">
+      <small>Vessel · Platinum</small><h3>Stillwater</h3><p>Porcelain, platinum band · 30 cm</p>
+    </article>
+
+    <article class="card" data-reveal style="--d:.3s">
+      <img class="art-obj" src="img/drift.jpg" alt="Drift cup set" loading="lazy">
+      <small>Cup set · ×4</small><h3>Drift</h3><p>Graphite glaze · 180 ml</p>
+    </article>
+  </div>
+</section>
+
+<section class="workshops" id="workshops">
+  <div class="sec-head">
+    <div>
+      <h2 class="h-sec" data-reveal>Workshops</h2>
+      <p class="sub" data-reveal style="--d:.1s">Three hours at the wheel</p>
+    </div>
+    <p class="note" data-reveal style="--d:.15s">Clay, glaze and firing included. Your pieces are ready to collect — or ship — three weeks later.</p>
+  </div>
+
+  <div class="plans">
+    <article class="plan" data-reveal style="--d:0s">
+      <small>Private</small>
+      <div class="pr">€<span data-count="210">210</span></div>
+      <hr>
+      <p>One-to-one with the maker. Choose your form and glaze, leave with two or three pieces.</p>
+      <a class="btn btn-silver btn-block" href="#dates">Choose a time</a>
+    </article>
+    <article class="plan plan-dark" data-reveal style="--d:.1s">
+      <small>For two</small><span class="badge">Most booked</span>
+      <div class="pr">€<span data-count="320">320</span></div>
+      <hr>
+      <p>A date at the wheel: one studio, two sets of tools, a shared glazing table.</p>
+      <a class="btn btn-silver btn-block" href="#dates">Choose a time</a>
+    </article>
+    <article class="plan" data-reveal style="--d:.2s">
+      <small>Group</small>
+      <div class="pr">€<span data-count="110">110</span><em>/ guest</em></div>
+      <hr>
+      <p>An intimate session for friends or a team. Private hire available.</p>
+      <a class="btn btn-silver btn-block" href="#dates">Choose a time</a>
+    </article>
+  </div>
+
+  <div class="dates" id="dates">
+    <div class="dates-head"><span>Upcoming dates · November</span><span>Clerkenwell Studio, Paris</span></div>
+    <ul>
+      <li data-reveal style="--d:0s"><b class="dd">7 Nov</b><span class="tm">Sat · 12:00</span><span class="ev">Wheel throwing · Group</span><span class="st ok">2 places left</span><button class="btn btn-navy">Book</button></li>
+      <li data-reveal style="--d:.07s"><b class="dd">8 Nov</b><span class="tm">Sun · 15:00</span><span class="ev">Hand building · For two</span><span class="st">Available</span><button class="btn btn-navy">Book</button></li>
+      <li data-reveal style="--d:.14s"><b class="dd">11 Nov</b><span class="tm">Wed · 19:00</span><span class="ev">Glazing evening · Group</span><span class="st">Available</span><button class="btn btn-navy">Book</button></li>
+      <li data-reveal style="--d:.21s"><b class="dd">13 Nov</b><span class="tm">Fri · 11:00</span><span class="ev">Wheel throwing · Group</span><span class="st ok pulse">Last slot</span><button class="btn btn-navy">Book</button></li>
+      <li data-reveal style="--d:.28s"><b class="dd">14 Nov</b><span class="tm">Sat · 13:00</span><span class="ev">Wheel throwing · Group</span><span class="st ok">3 places left</span><button class="btn btn-navy">Book</button></li>
+    </ul>
+  </div>
+</section>
+</div>
+
+<!-- ================= 5. STUDIO ================= -->
+<section class="studio" id="studio">
+  <h2 class="h-sec" data-reveal>Studio</h2>
+  <div class="studio-grid">
+    <figure class="photo" data-reveal>
+      <div class="photo-in" id="photoIn">
+        <img src="img/studio.jpg" alt="Vera Lane shaping a porcelain vase on the wheel" onerror="this.remove()">
+        <svg viewBox="0 0 480 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><linearGradient id="gWall" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7d8a9c"/><stop offset="1" stop-color="#5e6b7e"/></linearGradient></defs>
+          <rect width="480" height="520" fill="url(#gWall)"/>
+          <path d="M300 0 H480 V520 H230 C290 400 260 300 300 190Z" fill="#2b3445"/>
+          <path d="M0 520 V420 C80 380 160 410 240 440 L300 520Z" fill="#c9d0da"/>
+          <ellipse cx="190" cy="470" rx="190" ry="40" fill="#b3bcc9"/>
+          <g transform="translate(84 30) scale(.78)"><use href="#vaseShape" fill="url(#gWhite)"/></g>
+        </svg>
+        <figcaption>Place studio photo at <code>img/studio.jpg</code></figcaption>
+      </div>
+    </figure>
+    <div class="studio-copy">
+      <h3 class="h-big" data-reveal>Silence is<br><em>our first material</em></h3>
+      <p class="caps" data-reveal style="--d:.1s">RIME is the studio of maker Vera Lane. We work only in porcelain and cold glazes — pearl, graphite, ice. Every piece is thrown by hand and fired twice.</p>
+      <p class="caps tiny" data-reveal style="--d:.15s">No mass production. An edition never exceeds twelve pieces, and each one is signed.</p>
+      <hr class="fade" data-reveal style="--d:.2s">
+      <div class="sign" data-reveal style="--d:.25s">
+        <svg viewBox="0 0 110 130" width="110" height="130"><path d="M20 20 C40 4 70 14 78 8 C94 6 96 40 106 52 C112 76 96 100 100 112 C84 130 50 126 36 124 C30 104 20 96 10 80 C4 56 24 44 20 20Z" fill="#bccfdd"/></svg>
+        <div><span>Vera Lane</span><small>Founder &amp; Maker</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6. COMMISSIONS ================= -->
+<section class="commissions" id="commissions">
+  <h2 class="h-sec" data-reveal>Commissions</h2>
+  <div class="com-grid">
+    <form class="com-form" id="comForm" novalidate>
+      <h3 class="h-big" data-reveal>A piece made<br>only for you</h3>
+      <p class="caps" data-reveal style="--d:.1s">Tableware for your home, a statement object, or a series for a restaurant. We reply with a sketch and a quote within three days.</p>
+
+      <div class="row2" data-reveal style="--d:.15s">
+        <label><span>Name</span><input name="name" type="text" placeholder="Your Name" autocomplete="name" required></label>
+        <label><span>Email</span><input name="email" type="email" placeholder="you@example.com" autocomplete="email" required></label>
+      </div>
+      <div class="chips-wrap" data-reveal style="--d:.2s">
+        <span class="lbl">What are we making</span>
+        <div class="chips" role="radiogroup">
+          <button type="button" class="chip on" role="radio" aria-checked="true">Tableware</button>
+          <button type="button" class="chip" role="radio" aria-checked="false">Vase or object</button>
+          <button type="button" class="chip" role="radio" aria-checked="false">Hospitality series</button>
+          <button type="button" class="chip" role="radio" aria-checked="false">Gift</button>
+        </div>
+      </div>
+      <label class="brief" data-reveal style="--d:.25s"><span>Brief</span><textarea name="brief" rows="6" placeholder="Quantity, sizes, timeline, references"></textarea></label>
+      <div class="send" data-reveal style="--d:.3s">
+        <button class="btn btn-silver btn-lg" type="submit"><span id="sendLbl">Send request</span> <svg width="14" height="10" viewBox="0 0 14 10"><path d="M0 5h12M8 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+        <small>We reply within one working day.<br>No newsletters, ever.</small>
+      </div>
+    </form>
+
+    <div class="com-art" aria-hidden="true">
+      <div class="com-halo"></div>
+      <div class="com-scene" id="comScene"><img src="img/commission.jpg" alt="" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="f-top">
+    <div class="f-brand">
+      <div class="f-logo">RIME</div>
+      <p class="caps">Ceramic atelier. Hand-thrown porcelain, workshops and commissions. Shipping across the UK, EU and US.</p>
+    </div>
+    <div class="f-visit caps">
+      <span>Visit</span>
+      <p>[Studio address]<br>Clerkenwell, London EC1</p>
+      <p>[+44 0000 000000]</p>
+      <p><a href="mailto:hello@rime.studio">hello@rime.studio</a></p>
+      <p>Wed–Sun · 11:00–19:00</p>
+      <div class="social"><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Pinterest">Pinterest</a><a href="#" aria-label="Facebook">Facebook</a></div>
+    </div>
+  </div>
+  <div class="map" role="img" aria-label="Map placeholder"></div>
+  <hr class="fade">
+</footer>
+
+</main>
+<script src="js/main.js"></script>
+<script src="js/process.js"></script>
+</body>
+</html>
