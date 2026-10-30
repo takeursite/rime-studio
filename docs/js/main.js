@@ -13,6 +13,12 @@
     lastY = y;
   }, { passive: true });
 
+  /* ---- mobile menu ---- */
+  const burger = $('.burger');
+  const setMenu = o => { nav.classList.toggle('open', o); burger.setAttribute('aria-expanded', o); document.body.style.overflow = o ? 'hidden' : ''; };
+  burger.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
+  $$('.nav-links a, .nav > .btn').forEach(a => a.addEventListener('click', () => setMenu(false)));
+
   /* ---- active link ---- */
   const links = $$('.nav-links a');
   const spy = new IntersectionObserver(es => es.forEach(e => {
